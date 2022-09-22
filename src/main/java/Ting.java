@@ -32,12 +32,13 @@ public class Ting extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		 return request.getRequestDispatcher("don.jsp").forward(request,response);
-		response.setContentType("text/html");
-		PrintWriter pw=response.getWriter();
-		pw.println("<h1>Shut</h1>");
-		pw.println("<h1>The up</h1>");
-		pw.close();
+		 request.getRequestDispatcher("don.jsp").forward(request,response);
+		 return;
+//		response.setContentType("text/html");
+//		PrintWriter pw=response.getWriter();
+//		pw.println("<h1>Shut</h1>");
+//		pw.println("<h1>The up</h1>");
+//		pw.close();
 	}
 
 	/**
